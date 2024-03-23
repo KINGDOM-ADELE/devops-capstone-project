@@ -71,7 +71,6 @@
    Then the account should be successfully removed from the system
 
 
-## User Story: List all accounts in the service
 5. **List all accounts in the service**
 
    **As a** user  
@@ -89,7 +88,6 @@
    Then I should receive a paginated list of accounts
 
 
-## User Story: Containerize your microservice using Docker
 6. **Containerize your microservice using Docker**
 
    **As a** developer  
@@ -106,7 +104,7 @@
    When I build a Docker image for the microservice
    Then the microservice should be successfully containerized
 
-## User Story: Deploy your Docker image to Kubernetes
+
 7. **Containerize your microservice using Docker**
 
    **As a** developer  
