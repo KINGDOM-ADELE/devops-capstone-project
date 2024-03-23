@@ -54,7 +54,7 @@
 
 
 
-3. **Delete an account from the service**
+4. **Delete an account from the service**
 
    **As a** user  
    **I need** to delete an account from the service  
@@ -72,7 +72,7 @@
 
 
 ## User Story: List all accounts in the service
-3. **List all accounts in the service**
+5. **List all accounts in the service**
 
    **As a** user  
    **I need** to list all accounts in the service  
@@ -87,3 +87,39 @@
    Given that I am authenticated
    When I send a request to list all accounts
    Then I should receive a paginated list of accounts
+
+
+## User Story: Containerize your microservice using Docker
+6. **Containerize your microservice using Docker**
+
+   **As a** developer  
+   **I need** to containerize my microservice using Docker  
+   **So that** I can deploy it consistently across different environments  
+      
+   ### Details and Assumptions
+   * Docker is installed in the development environment.
+   * The microservice codebase is structured appropriately for Dockerization.
+
+   ### Acceptance Criteria
+   ```gherkin
+   Given that Docker is installed and the microservice is properly configured
+   When I build a Docker image for the microservice
+   Then the microservice should be successfully containerized
+
+## User Story: Deploy your Docker image to Kubernetes
+7. **Containerize your microservice using Docker**
+
+   **As a** developer  
+   **I need** to deploy my Docker image to Kubernetes  
+   **So that** I can scale and manage the microservice in a containerized environment  
+      
+   ### Details and Assumptions
+   * Kubernetes cluster is set up and accessible.
+   * Docker image registry is configured for Kubernetes deployment.
+
+   ### Acceptance Criteria
+   ```gherkin
+   Given that the Kubernetes cluster is ready and the Docker image is available
+   When I deploy the Docker image to Kubernetes
+   Then the microservice should be successfully deployed and accessible
+
